@@ -1,0 +1,176 @@
+/* src/App.css */
+
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f0f2f5;
+}
+
+/* Navbar Tabs */
+.navbar {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.navbar button {
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  background: white;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.navbar button.active {
+  background: #2563eb;
+  color: white;
+  border-color: #2563eb;
+}
+
+/* Main Content Area Box */
+.content-box {
+  width: 100%;
+  max-width: 600px;
+  min-height: 400px;
+  border: 2px solid #ddd;
+  border-radius: 16px;
+  padding: 30px;
+  background: #ffffff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Internal Screens Shared Layout */
+.center-layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: #2563eb;
+  color: #fff;
+  border: none;
+  padding: 14px 28px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(37, 99, 235, 0.2);
+  transition: background 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: #1d4ed8;
+}
+
+.btn-danger {
+  background-color: #d9534f;
+  color: #fff;
+  border: none;
+  padding: 14px 28px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(217, 83, 79, 0.2);
+  transition: background 0.2s;
+}
+
+.btn-danger:hover {
+  background-color: #c9302c;
+}
+
+.subtext {
+  color: #6c757d;
+  font-size: 14px;
+}
+
+.timer-text {
+  font-size: 36px;
+  font-weight: 700;
+  color: #333;
+}
+
+/* Progress Bar Tracking */
+.progress-container {
+  width: 100%;
+  background-color: #e9ecef;
+  border-radius: 10px;
+  height: 8px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #d9534f;
+  transition: width 1s linear;
+}
+
+/* Result Dashboard */
+.result-container {
+  text-align: left;
+}
+
+.score-badge {
+  font-size: 42px;
+  font-weight: 800;
+  color: #28a745;
+  text-align: center;
+  margin: 15px 0;
+  background-color: #e8f5e9;
+  padding: 10px;
+  border-radius: 50px;
+  display: inline-block;
+  width: 140px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.text-section {
+  background-color: #f8f9fa;
+  padding: 16px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  border-left: 4px solid #dee2e6;
+}
+
+.feedback-text {
+  margin-top: 8px;
+  color: #28a745;
+  font-weight: 500;
+}
+
+/* CSS Keyframe Spinner Loading Wheel */
+.spinner-loader {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #2563eb;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
