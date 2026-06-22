@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
-const BACKEND_URL = "http://localhost:5000";
+const BACKEND_URL = "https://activelistener.onrender.com";
 
 export function useImpromptuTest() {
   const [step, setStep] = useState(1); 
