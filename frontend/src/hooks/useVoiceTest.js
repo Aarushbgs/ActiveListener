@@ -13,6 +13,7 @@ export function useVoiceTest() {
   const [aiResult, setAiResult] = useState({ score: null, feedback: "" });
   const [loading, setLoading] = useState(false);
   const [statusMessage, setStatusMessage] = useState("");
+  const [userSpokenText, setUserSpokenText] = useState("");
   
 
 
