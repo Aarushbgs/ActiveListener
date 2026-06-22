@@ -1,6 +1,6 @@
 
 import { useState, useEffect, useRef } from "react";
-import { GoogleGenerativeAI } from "@google/generative-ai";
+
 
 const BACKEND_URL = "https://activelistener.onrender.com";
 
@@ -15,7 +15,7 @@ export function useVoiceTest() {
   const [statusMessage, setStatusMessage] = useState("");
   
 
-  const [userSpokenText, setUserSpokenText] = useState("");
+
 
   const timerRef = useRef(null);
   const recognitionRef = useRef(null); 
