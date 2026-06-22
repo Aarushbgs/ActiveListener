@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import { GoogleGenerativeAI } from "@google/generative-ai";
+
 
 const BACKEND_URL = "https://activelistener.onrender.com";
 
